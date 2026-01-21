@@ -1,2 +1,2 @@
-# business-cards
-Personal Business Cards - Mobile Apps
+# contact-cards
+Various Personal Contact Cards
