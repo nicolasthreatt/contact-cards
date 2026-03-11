@@ -9,13 +9,12 @@ The longer-term direction is to grow this into a small collection of shareable s
 ```text
 contact-cards/
 ├── .env.example
-├── app.py
+├── card.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 └── assets/
-    ├── headshot.jpg
-    └── resume.pdf
+    └── .gitkeep
 ```
 
 ## Setup
@@ -40,12 +39,16 @@ CONTACT_CARD_LOCATION=Your City, ST
 CONTACT_CARD_EMAIL=you@example.com
 CONTACT_CARD_GITHUB_URL=https://github.com/yourusername
 CONTACT_CARD_LINKEDIN_URL=https://linkedin.com/in/yourusername
+CONTACT_CARD_HEADSHOT_PATH=assets/headshot.jpg
+CONTACT_CARD_RESUME_PATH=assets/resume.pdf
 ```
+
+The `assets/` directory is kept in git with `.gitkeep`, but the actual local files inside it are ignored.
 
 ## Run
 
 ```bash
-python app.py
+python card.py
 ```
 
 Then open the local NiceGUI URL shown in the terminal (typically `http://127.0.0.1:8080`).
@@ -75,3 +78,5 @@ Then open the local NiceGUI URL shown in the terminal (typically `http://127.0.0
 | `CONTACT_CARD_EMAIL` | No | Email address embedded in the downloadable/scannable contact card. |
 | `CONTACT_CARD_GITHUB_URL` | No | GitHub profile URL used by the button and vCard. |
 | `CONTACT_CARD_LINKEDIN_URL` | No | LinkedIn profile URL used by the button and vCard. |
+| `CONTACT_CARD_HEADSHOT_PATH` | No | Path to the headshot image served by the app. |
+| `CONTACT_CARD_RESUME_PATH` | No | Path to the resume PDF served by the app. |
