@@ -1,3 +1,0 @@
-nicegui
-python-dotenv
-qrcode[pil]
