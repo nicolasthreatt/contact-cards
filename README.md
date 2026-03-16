@@ -39,6 +39,9 @@ cd card
 npm install
 ```
 
+Expo SDK 54 expects a current Node 20 release. Use Node `20.19.4` or newer before
+running the app.
+
 Then edit `.env` and set your local values:
 
 ```bash
@@ -49,8 +52,8 @@ CONTACT_CARD_TITLE_FR=Votre Titre
 CONTACT_CARD_TITLE_ES=Tu Titulo
 CONTACT_CARD_LOCATION=City, ST
 CONTACT_CARD_EMAIL=you@example.com
-CONTACT_CARD_GITHUB_URL=https://github.com/yourusername
-CONTACT_CARD_LINKEDIN_URL=https://linkedin.com/in/yourusername
+CONTACT_CARD_GITHUB_URL=https://github.com/user
+CONTACT_CARD_LINKEDIN_URL=https://linkedin.com/in/user
 ```
 
 The React Native app expects these exact local files so Expo can bundle them into the mobile app:
@@ -66,7 +69,7 @@ The `card/assets/` directory is kept in git with `.gitkeep`, but the actual pers
 
 ```bash
 cd card
-npx expo start
+npx expo start --tunnel
 ```
 
 Then:
@@ -74,6 +77,8 @@ Then:
 - press `i` for the iOS simulator
 - press `a` for the Android emulator
 - or scan the Expo Go QR code with your phone
+
+`--tunnel` is the most reliable option for Expo Go on a physical phone.
 
 ## Behavior
 
@@ -106,3 +111,13 @@ Then:
 | `CONTACT_CARD_EMAIL` | Email address embedded in the downloadable/scannable contact card. |
 | `CONTACT_CARD_GITHUB_URL` | GitHub profile URL used by the button and vCard. |
 | `CONTACT_CARD_LINKEDIN_URL` | LinkedIn profile URL used by the button and vCard. |
+
+## Screenshots
+
+The QR code is intentionally obscured in the screenshots.
+
+<p align="center">
+  <img src="docs/screenshots/english.png" alt="English app screenshot" width="220" hspace="8" />
+  <img src="docs/screenshots/spanish.png" alt="Spanish app screenshot" width="220" hspace="8" />
+  <img src="docs/screenshots/french.png" alt="French app screenshot" width="220" hspace="8" />
+</p>
