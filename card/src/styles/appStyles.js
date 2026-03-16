@@ -1,0 +1,188 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: '#000000',
+  },
+  page: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#000000',
+  },
+  card: {
+    alignSelf: 'center',
+    borderRadius: 32,
+    backgroundColor: '#000000',
+    shadowColor: '#111827',
+    shadowOpacity: 0.45,
+    shadowRadius: 28,
+    shadowOffset: { width: 0, height: 18 },
+    elevation: 20,
+  },
+  heroRow: {
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    marginBottom: 8,
+    position: 'relative',
+  },
+  languageMenuWrap: {
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    zIndex: 1,
+  },
+  headshot: {
+    alignSelf: 'center',
+  },
+  identityBlock: {
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  name: {
+    color: '#FFFFFF',
+    fontSize: 32,
+    fontWeight: '800',
+    lineHeight: 36,
+    textAlign: 'center',
+  },
+  title: {
+    color: '#CBD5E1',
+    fontSize: 17,
+    lineHeight: 22,
+    textAlign: 'center',
+    marginTop: 2,
+  },
+  location: {
+    color: '#94A3B8',
+    fontSize: 15,
+    lineHeight: 18,
+    textAlign: 'center',
+    marginTop: 2,
+  },
+  qrBlock: {
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  qrBlockPressed: {
+    opacity: 0.88,
+  },
+  qrFrame: {
+    borderRadius: 16,
+    backgroundColor: '#FFFFFF',
+    padding: 8,
+  },
+  qrHint: {
+    marginTop: 8,
+    color: '#64748B',
+    fontSize: 11,
+    fontWeight: '600',
+    letterSpacing: 2.2,
+    textTransform: 'uppercase',
+    textAlign: 'center',
+  },
+  buttonStack: {
+    marginTop: 8,
+    gap: 10,
+  },
+  modalBackdrop: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 24,
+    backgroundColor: 'rgba(0, 0, 0, 0.78)',
+  },
+  modalCard: {
+    borderRadius: 28,
+    backgroundColor: '#000000',
+    padding: 24,
+    alignItems: 'center',
+  },
+  modalTitle: {
+    color: '#FFFFFF',
+    fontSize: 22,
+    fontWeight: '700',
+    textAlign: 'center',
+    marginBottom: 18,
+  },
+  modalQrFrame: {
+    borderRadius: 24,
+    backgroundColor: '#FFFFFF',
+    padding: 14,
+  },
+  modalHelp: {
+    color: '#94A3B8',
+    fontSize: 14,
+    lineHeight: 20,
+    textAlign: 'center',
+    marginTop: 18,
+  },
+  composeCard: {
+    borderRadius: 28,
+    backgroundColor: '#000000',
+    padding: 22,
+    gap: 12,
+    alignSelf: 'center',
+  },
+  composeTitle: {
+    color: '#FFFFFF',
+    fontSize: 22,
+    fontWeight: '700',
+    textAlign: 'center',
+  },
+  composeHelp: {
+    color: '#94A3B8',
+    fontSize: 14,
+    lineHeight: 20,
+    textAlign: 'center',
+  },
+  input: {
+    width: '100%',
+    borderRadius: 16,
+    backgroundColor: '#111827',
+    color: '#FFFFFF',
+    fontSize: 16,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+  },
+  messageInput: {
+    minHeight: 140,
+  },
+  composeActions: {
+    width: '100%',
+    flexDirection: 'row',
+    gap: 10,
+  },
+  primaryAction: {
+    flex: 1,
+    minHeight: 48,
+    borderRadius: 14,
+    backgroundColor: '#EA4335',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  primaryActionPressed: {
+    backgroundColor: '#D93025',
+  },
+  primaryActionLabel: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  secondaryAction: {
+    flex: 1,
+    minHeight: 48,
+    borderRadius: 14,
+    backgroundColor: '#27272A',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  secondaryActionPressed: {
+    backgroundColor: '#3F3F46',
+  },
+  secondaryActionLabel: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '700',
+  },
+});
